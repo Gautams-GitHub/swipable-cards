@@ -4,7 +4,7 @@ function loadScript(scriptURL, stylesheetURL) {
   style.rel = "stylesheet";
   style.href = stylesheetURL;
   script.src = scriptURL;
-  script.type = "text/javascript";
+  script.type = "module";
   script.onload = function () {
     console.log("Script loaded successfully.");
   };
