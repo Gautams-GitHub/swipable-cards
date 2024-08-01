@@ -1,4 +1,4 @@
-bareInnerHTML = `<div class="carousel">
+const bareInnerHTML = `<div class="carousel">
         <div class="nav nav-left">
           <div class="ion-chevron-left carousel-arrow-icon-left"></div>
         </div>
