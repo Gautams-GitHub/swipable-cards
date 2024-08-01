@@ -111,6 +111,14 @@ shareButton.onclick = () => {
 shareButton.innerHTML = "SHARE";
 document.body.appendChild(shareButton);
 
+function openWhatsApp() {
+  window.open("whatsapp://send?text=https://www.linkedin.com/in/gagan-gautam/");
+}
+const shareWhatsAppButton = document.createElement("button");
+shareWhatsAppButton.onclick = openWhatsApp;
+shareWhatsAppButton.innerHTML = "SHARE ON WHATSAPP";
+document.body.appendChild(shareWhatsAppButton);
+
 initCard(current);
 
 function appendCard(data) {
