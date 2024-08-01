@@ -69,10 +69,11 @@ class="a"
 const frameDiv = document.createElement("div");
 frameDiv.className = "frame";
 const iconsDiv = document.createElement("div");
-iconsDiv.className = "icons";
-iconsDiv.innerHTML = bareInnerHTML;
 document.body.appendChild(frameDiv);
-document.body.appendChild(iconsDiv);
+
+// iconsDiv.className = "icons";
+// iconsDiv.innerHTML = bareInnerHTML;
+// document.body.appendChild(iconsDiv);
 
 const frame = document.body.querySelector(".frame");
 data.forEach((_data) => appendCard(_data));
@@ -84,16 +85,16 @@ let startX = 0,
   moveX = 0,
   moveY = 0;
 
-document.querySelector("#like").onclick = () => {
-  moveX = 1;
-  moveY = 0;
-  complete();
-};
-document.querySelector("#hate").onclick = () => {
-  moveX = -1;
-  moveY = 0;
-  complete();
-};
+// document.querySelector("#like").onclick = () => {
+//   moveX = 1;
+//   moveY = 0;
+//   complete();
+// };
+// document.querySelector("#hate").onclick = () => {
+//   moveX = -1;
+//   moveY = 0;
+//   complete();
+// };
 
 initCard(current);
 
