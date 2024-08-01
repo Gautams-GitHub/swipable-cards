@@ -108,7 +108,7 @@ shareButton.onclick = () => {
     navigator.clipboard.write("https://www.linkedin.com/in/gagan-gautam/");
   }
 };
-shareButton.text = "SHARE";
+shareButton.innerHTML = "SHARE";
 document.body.appendChild(shareButton);
 
 initCard(current);
