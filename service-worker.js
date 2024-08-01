@@ -1,7 +1,7 @@
 // service-worker.js
 
 const CACHE_NAME = "pwa-card-app-cache-v1";
-const urlsToCache = ["./", "./index.html", "./manifest.json", "./style.css"];
+const urlsToCache = ["./index.html", "./manifest.json", "./style.css"];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(
