@@ -68,9 +68,9 @@ class="a"
         `;
 const frameDiv = document.createElement("div");
 frameDiv.className = "frame";
-const iconsDiv = document.createElement("div");
 document.body.appendChild(frameDiv);
 
+const iconsDiv = document.createElement("div");
 // iconsDiv.className = "icons";
 // iconsDiv.innerHTML = bareInnerHTML;
 // document.body.appendChild(iconsDiv);
@@ -95,6 +95,21 @@ let startX = 0,
 //   moveY = 0;
 //   complete();
 // };
+
+const shareButton = document.createElement("button");
+shareButton.onclick = () => {
+  if (navigator.share) {
+    navigator.share({
+      text: "Increase my reach!",
+      url: "https://www.linkedin.com/in/gagan-gautam/",
+      title: "Share",
+    });
+  } else {
+    navigator.clipboard.write("https://www.linkedin.com/in/gagan-gautam/");
+  }
+};
+shareButton.text = "SHARE";
+document.body.appendChild(shareButton);
 
 initCard(current);
 
